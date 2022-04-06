@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">Pomodoro</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-name">ПОМІДОРИ</div>
+      <div class="settings-icon" id="settings-icon">
+        <img src="./settings.png" alt="settings" />
+      </div>
+    </header>
+    <div id="settings-container">
+      <h2>Welcome, налаштуйте свого помідора</h2>
+      <div class="input-container">
+        <p>Тривалість (в хвилинах):</p>
+        <div class="input-wrapper">
+          <label for="pomodoro">помідора</label>
+          <input
+            type="number"
+            name="pomodoro"
+            id="pomodoro"
+            min="1"
+            max="60"
+            value="25"
+          />
+        </div>
+        <div class="input-wrapper">
+          <label for="break">перерви</label>
+          <input
+            type="number"
+            name="break"
+            id="break"
+            min="1"
+            max="30"
+            value="5"
+          />
+        </div>
+        <br />
+        <div class="input-wrapper">
+          <label for="times">Кількість помідорів:</label>
+          <input
+            type="number"
+            name="times"
+            id="times"
+            min="1"
+            max="10"
+            value="2"
+          />
+        </div>
+      </div>
+      <button id="submit-settings">Зберегти</button>
+    </div>
+
+    <div id="counter-container" class="pomodoro">
+      <p class="timer-text" id="session"></p>
+      <p class="timer-text" id="moto"></p>
+      <div id="timer-container" data-type="pomodoro"></div>
+      <span class="buttons-span">
+        <button id="pause-start" data-button=""></button>
+        <button id="skip">Далі</button></span
+      >
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

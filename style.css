@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Saira+Condensed&display=swap');
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    background-image: url(tomatoes.jpg);
+    background-size: 500px ;
+    background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 60px;
+    border-bottom: 1px solid #bababa;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.settings-icon img{
+    width: 30px;
+}
+
+h2 {
+    margin: 5px;
+}
+
+input {
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #ff1100;
+    width: 40px;
+    padding: 3px;
+    padding-left: 5px;
+}
+
+button {
+    border-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 10px 8px;
+    background-color: #ff1100;
+    border-radius: 5px;
+    margin-top: 9px;
+}
+
+button:active {
+    background-color: #ffa230;
+}
+
+#settings-container {
+    position: absolute;
+    margin-top: 80px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    visibility: hidden;
+}
+
+.input-container {
+    font-size: 20px;
+    width: 70%;
+    
+}
+
+.input-wrapper {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#counter-container {
+    width: 37%;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+#counter-container p {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#timer-container {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 170px;
+    line-height: 210px;
+}
+
+#counter-container button {
+    background-color: rgba(255, 255, 255, 0.313);
+}
+
+.buttons-span {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.break {
+    background-color: #3fc0c2;
+}
+
+.pomodoro {
+    background-color: #de4b40;
+}
