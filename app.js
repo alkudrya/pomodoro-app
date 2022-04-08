@@ -57,6 +57,7 @@ function createTimer() {
   session.innerHTML = "Сеанс " + pomodoroCounter + " з " + values[2];
 }
 
+let ring = new Audio("./notification.wav");
 let secs = 59;
 let mins;
 const countdown = document.getElementById("timer-container");
@@ -70,9 +71,10 @@ function runCountdown(mode) {
     mins--;
     secs = 59;
   }
-  if (mins == -1 && secs == 10) {
+  if (mins == -1 && secs == 59) {
     clearInterval(interval);
     interval = null;
+    ring.play();
     mode == "pomodoro" ? startBreak() : startPomodoro();
   } else {
     if (secs < 10) {
